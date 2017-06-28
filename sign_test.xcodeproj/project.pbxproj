@@ -405,7 +405,12 @@
 					131FC3701EF28499007A9D1D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 339CX9E66J;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					131FC3841EF28499007A9D1D = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -422,17 +427,22 @@
 					131FC3A31EF284DF007A9D1D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 339CX9E66J;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					131FC3AF1EF284E0007A9D1D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 339CX9E66J;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					131FC3CE1EF286FC007A9D1D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 339CX9E66J;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -726,6 +736,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4fd7beed-a265-47f4-9de3-c7589a2f6797";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise Development Provisioning Profile (com.godrei.sign-test)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -735,11 +747,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 339CX9E66J;
 				INFOPLIST_FILE = sign_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0deddd31-d9c1-4da1-8a8f-8cc123969984";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise App Store Provisioning Profile (com.godrei.sign-test)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -811,6 +826,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "b9313c0b-759e-4b70-84c5-21ea172d15b4";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise Development Provisioning Profile (com.godrei.sign-test.watchkitapp.watchkitextension)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -823,11 +840,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 339CX9E66J;
 				INFOPLIST_FILE = "watch-kit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "bfa54b48-ac68-4084-8c40-dbfd1621c989";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise App Store Provisioning Profile (com.godrei.sign-test.watchkitapp.watchkitextension)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -846,6 +866,8 @@
 				INFOPLIST_FILE = "watch-kit/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30b50cef-eefc-485e-94e9-720716c955ef";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise Development Provisioning Profile (com.godrei.sign-test.watchkitapp)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -859,11 +881,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 339CX9E66J;
 				IBSC_MODULE = watch_kit_Extension;
 				INFOPLIST_FILE = "watch-kit/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "130f2ac8-ba6d-4b51-ac8a-a900acd422fe";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise App Store Provisioning Profile (com.godrei.sign-test.watchkitapp)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -880,6 +905,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fcde0b27-d465-4630-bf84-a062049464a2";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise Development Provisioning Profile (com.godrei.sign-test.today-extension)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -888,11 +915,14 @@
 		131FC3DF1EF286FC007A9D1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 339CX9E66J;
 				INFOPLIST_FILE = today_extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.godrei.sign-test.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d7bd498c-14f7-4849-96af-3e9e10fa107c";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise App Store Provisioning Profile (com.godrei.sign-test.today-extension)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -917,6 +947,7 @@
 				131FC39B1EF28499007A9D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		131FC39C1EF28499007A9D1D /* Build configuration list for PBXNativeTarget "sign_testTests" */ = {
 			isa = XCConfigurationList;
@@ -925,6 +956,7 @@
 				131FC39E1EF28499007A9D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		131FC39F1EF28499007A9D1D /* Build configuration list for PBXNativeTarget "sign_testUITests" */ = {
 			isa = XCConfigurationList;
@@ -933,6 +965,7 @@
 				131FC3A11EF28499007A9D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		131FC3C31EF284E0007A9D1D /* Build configuration list for PBXNativeTarget "watch-kit Extension" */ = {
 			isa = XCConfigurationList;
@@ -941,6 +974,7 @@
 				131FC3C51EF284E0007A9D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		131FC3C71EF284E0007A9D1D /* Build configuration list for PBXNativeTarget "watch-kit" */ = {
 			isa = XCConfigurationList;
@@ -949,6 +983,7 @@
 				131FC3C91EF284E0007A9D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		131FC3DD1EF286FC007A9D1D /* Build configuration list for PBXNativeTarget "today_extension" */ = {
 			isa = XCConfigurationList;
@@ -957,6 +992,7 @@
 				131FC3DF1EF286FC007A9D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
